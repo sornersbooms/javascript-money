@@ -160,7 +160,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Videos/mes", "Análisis Básico", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Videos Ilimitados", "Auditoría de Canal", "Soporte VIP"] }
         ],
-        downloadLink: "/downloads/seotube.zip"
+        downloadLink: "https://drive.google.com/file/d/1EVfQ0SBmG1Ic8Z3QnV_Zx0r9OZYeGu61/view?usp=drive_link"
     },
     {
         id: "prospect-ia",
