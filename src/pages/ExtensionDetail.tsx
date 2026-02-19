@@ -86,7 +86,8 @@ const ExtensionDetail: React.FC = () => {
 
                         <motion.a
                             href={extension.downloadLink || '#'}
-                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="btn-primary"
