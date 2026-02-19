@@ -44,7 +44,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["1 Grupo a la vez", "Publicación Lenta", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Multi-Grupos Ilimitado", "Velocidad Turbo", "Soporte Prioritario VIP"] }
         ],
-        downloadLink: "https://t.me/javascriptmoney/11"
+        downloadLink: "https://drive.google.com/file/d/1KUbngvNinNCK0XMywgk-ojaQP2yC49UH/view?usp=drive_link"
     },
     {
         id: "respondssenger",
@@ -73,7 +73,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Scripts Guardados", "Respuestas Manuales", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Scripts Ilimitados", "Auto-Respuesta IA", "Soporte WhatsApp Directo"] }
         ],
-        downloadLink: "https://t.me/javascriptmoney/83"
+        downloadLink: "https://drive.google.com/file/d/1qBSBzBxgfrnDlbnxJ4VIQgk3OAys_JEG/view?usp=drive_link"
     },
     {
         id: "marketmoneypost",
@@ -102,7 +102,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Productos/día", "Publicación Manual", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Productos Ilimitados", "Publicación Automática", "Soporte VIP"] }
         ],
-        downloadLink: "https://t.me/javascriptmoney/14"
+        downloadLink: "https://drive.google.com/file/d/1blDx9K0R8Np9E7XSdgW8ZvZfjijUGr7j/view?usp=drive_link"
     },
     {
         id: "traffic-wa",
@@ -218,7 +218,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Mensajes IA/día", "Solo Texto", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["IA Ilimitada", "Comprensión de Audios", "Entrenamiento Personalizado"] }
         ],
-        downloadLink: "https://t.me/javascriptmoney/86"
+        downloadLink: "https://drive.google.com/file/d/1bo09XRgipoyO-slK0Gc5GwSGT9CRI4Sx/view?usp=drive_link"
     },
     {
         id: "Auto-clipping",
