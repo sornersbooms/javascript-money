@@ -136,7 +136,7 @@ export const extensions: Extension[] = [
     {
         id: "seoTube",
         title: "SEO Tube",
-        youtubeUrl: "https://www.youtube.com/embed/EL_ID_DEL_VIDEO",
+        youtubeUrl: "https://www.youtube.com/embed/rY2rOte87Wo",
         shortDescription: "Posiciona tus videos #1 con el poder de la IA.",
         fullDescription: "¿Te cuesta destacar en YouTube? Usa el poder de la Inteligencia Artificial para generar títulos, descripciones y etiquetas que el algoritmo AMA. Sube de ranking, gana más visitas y haz crecer tu canal sin necesidad de ser un experto en SEO.",
         features: [
