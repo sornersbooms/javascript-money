@@ -85,7 +85,8 @@ const ExtensionDetail: React.FC = () => {
                         </p>
 
                         <motion.a
-                            href="#"
+                            href={extension.downloadLink || '#'}
+                            download
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="btn-primary"
@@ -100,7 +101,9 @@ const ExtensionDetail: React.FC = () => {
                                 fontWeight: 800,
                                 background: '#22c55e', /* Sales Green */
                                 boxShadow: '0 10px 20px -5px rgba(34, 197, 94, 0.4)',
-                                marginBottom: '1rem'
+                                marginBottom: '1rem',
+                                textDecoration: 'none',
+                                color: 'white'
                             }}
                         >
                             Instalar y Probar Gratis (30 Días)

@@ -12,6 +12,7 @@ export interface Extension {
     youtubeUrl?: string;
     isUnderDevelopment?: boolean;
     plans?: Array<{ name: string; price: string; features: string[] }>;
+    downloadLink?: string;
 }
 
 export const extensions: Extension[] = [
@@ -42,7 +43,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["1 Grupo a la vez", "Publicación Lenta", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Multi-Grupos Ilimitado", "Velocidad Turbo", "Soporte Prioritario VIP"] }
-        ]
+        ],
+        downloadLink: "https://t.me/javascriptmoney/11"
     },
     {
         id: "respondssenger",
@@ -55,7 +57,7 @@ export const extensions: Extension[] = [
             "Detección de Contexto Inteligente (Sabe qué responder según la pregunta del cliente 🧠)",
             "Envío Masivo de Reactivación (Recupera ventas perdidas en segundos ♻️)",
             "Modo 'Focus' Minimalista (Interfaz limpia para máxima velocidad ⚡)",
-            "Anti-Ban Typing (Simulamos escritura humana real para proteger tu cuenta �️)",
+            "Anti-Ban Typing (Simulamos escritura humana real para proteger tu cuenta ️)",
             "Categorización por Etiquetas (Organiza tus respuestas por producto o etapa de venta 🏷️)"
         ],
         technicalSpecs: [
@@ -70,7 +72,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Scripts Guardados", "Respuestas Manuales", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Scripts Ilimitados", "Auto-Respuesta IA", "Soporte WhatsApp Directo"] }
-        ]
+        ],
+        downloadLink: "https://t.me/javascriptmoney/83"
     },
     {
         id: "marketmoneypost",
@@ -83,8 +86,8 @@ export const extensions: Extension[] = [
             "Llenado 'Smart Fill' en Facebook (Publica sin escribir ni una letra 🤖)",
             "Descarga de Imágenes 'Modo Fantasma' (Bypassea protecciones de descarga 👻)",
             "Calculadora de Margen Automática (Ajusta tus precios al instante 💰)",
-            "Selectores de Respaldo Dinámicos (Si Facebook cambia, nosotros nos adaptamos �)",
-            "Protección de Cuenta Anti-Spam (Comportamiento humano aleatorio �️)"
+            "Selectores de Respaldo Dinámicos (Si Facebook cambia, nosotros nos adaptamos )",
+            "Protección de Cuenta Anti-Spam (Comportamiento humano aleatorio ️)"
         ],
         technicalSpecs: [
             "Scraping: Heurística de DOM Avanzada (Selectores resilientes)",
@@ -98,7 +101,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Productos/día", "Publicación Manual", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Productos Ilimitados", "Publicación Automática", "Soporte VIP"] }
-        ]
+        ],
+        downloadLink: "https://t.me/javascriptmoney/14"
     },
     {
         id: "traffic-wa",
@@ -107,8 +111,8 @@ export const extensions: Extension[] = [
         shortDescription: "Extrae Numeros y Envia 20 o 30 mensajes Diarios en WhatsApp a Numeros Desconocidos",
         fullDescription: "Olvídate de guardar contactos uno por uno. Esta herramienta extrae automáticamente números de tus grupos de WhatsApp y envía, de forma segura, entre 20 y 30 mensajes diarios a clientes potenciales desconocidos. Es la forma más efectiva de prospectar en frío y llenar tu agenda de nuevos interesados todos los días, sin riesgo de bloqueos por exceso de actividad.",
         features: [
-            "Envío Masivo Nativo (Usa la API oculta de WhatsApp Web para máxima entrega �)",
-            "Extractor de Miembros de Grupos (Obtén cientos de leads calificados en segundos �)",
+            "Envío Masivo Nativo (Usa la API oculta de WhatsApp Web para máxima entrega )",
+            "Extractor de Miembros de Grupos (Obtén cientos de leads calificados en segundos )",
             "CRM Contextual Inteligente (Detecta automáticamente el nombre del grupo 🧠)",
             "Modo 'Native Flow' Anti-Bloqueo (Simula clicks y escritura real 🛡️)",
             "Intervalos de Seguridad (Pausas aleatorias entre mensajes para evitar spam ⏱️)",
@@ -126,7 +130,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Contactos/día", "Envío Lento", "Sin Reportes"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Contactos Ilimitados", "Envío Optimizado", "Reportes de Entrega"] }
-        ]
+        ],
+        downloadLink: "/downloads/traffic-wa.zip"
     },
     {
         id: "seoTube",
@@ -135,12 +140,12 @@ export const extensions: Extension[] = [
         shortDescription: "Posiciona tus videos #1 con el poder de la IA.",
         fullDescription: "¿Te cuesta destacar en YouTube? Usa el poder de la Inteligencia Artificial para generar títulos, descripciones y etiquetas que el algoritmo AMA. Sube de ranking, gana más visitas y haz crecer tu canal sin necesidad de ser un experto en SEO.",
         features: [
-            "Generador de Títulos Virales (IA entrenada con los mejores Youtubers �)",
+            "Generador de Títulos Virales (IA entrenada con los mejores Youtubers )",
             "Extractor de Tags de Competencia (Espía qué etiquetas usan los #1 🕵️)",
             "Optimizador de Descripción Persuasiva (Textos que invitan al clic 🖱️)",
             "Análisis de Tendencias en Tiempo Real (Súbete a la ola antes que nadie 🌊)",
             "Integración Directa en YouTube Studio (Sin copiar y pegar 🔗)",
-            "Sistema 'Always-Alive' (Tu asistente SEO siempre activo en segundo plano �)"
+            "Sistema 'Always-Alive' (Tu asistente SEO siempre activo en segundo plano )"
         ],
         technicalSpecs: [
             "AI Core: Prompt Engineering Dinámico (Context-Aware)",
@@ -154,7 +159,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Videos/mes", "Análisis Básico", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Videos Ilimitados", "Auditoría de Canal", "Soporte VIP"] }
-        ]
+        ],
+        downloadLink: "/downloads/seotube.zip"
     },
     {
         id: "prospect-ia",
@@ -164,7 +170,7 @@ export const extensions: Extension[] = [
         fullDescription: "La herramienta definitiva para prospección masiva. Deja que la IA identifique miembros cualificados en grupos y los contacte en piloto automático. Llena tu embudo de ventas con leads calientes listos para comprar, sin mover un dedo.",
         features: [
             "Motor de Extracción Heurística en Tiempo Real (Detecta prospectos al instante ⚡)",
-            "Filtrado Inteligente de 'Nuevos Miembros' (Encuentra leads frescos �)",
+            "Filtrado Inteligente de 'Nuevos Miembros' (Encuentra leads frescos )",
             "Tecnología 'Human-Type' Anti-Ban (Escribe como tú, no como un robot 🤖)",
             "Sistema de Variación Spintax (Mensajes únicos para evitar filtros de spam 🔀)",
             "Detección Preventiva de Restricciones (Para antes de que Facebook sospeche 🛡️)",
@@ -182,12 +188,13 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Prospectos/día", "Mensajes Estándar", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Prospectos Ilimitados", "Spintax Avanzado", "Soporte Estratégico"] }
-        ]
+        ],
+        downloadLink: "/downloads/prospect-ia.zip"
     },
     {
         id: "TexteaIA",
         title: "Textea IA",
-        youtubeUrl: "https://www.youtube.com/embed/EL_ID_DEL_VIDEO",
+        youtubeUrl: "https://www.youtube.com/embed/_EpcBdrFjeY",
         shortDescription: "Un empleado virtual que vende o se deja entrenar por ti como tu quieras, trabaja en WhatsApp y Messenger.",
         fullDescription: "Convierte tu WhatsApp y Messenger en máquinas de ventas 24/7. Textea IA no es solo un chatbot; es un empleado virtual que puedes entrenar a tu gusto con tus propios scripts y productos, o dejar que la IA venda por ti de forma autónoma. Responde al instante, califica prospectos y cierra ventas mientras tú descansas.",
         features: [
@@ -210,7 +217,8 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Mensajes IA/día", "Solo Texto", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["IA Ilimitada", "Comprensión de Audios", "Entrenamiento Personalizado"] }
-        ]
+        ],
+        downloadLink: "https://t.me/javascriptmoney/86"
     },
     {
         id: "Auto-clipping",
@@ -239,6 +247,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Clips/día", "Resolución 720p", "Marca de Agua"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Clips Ilimitados", "4K Ready", "Auto-Subida TikTok"] }
-        ]
+        ],
+        downloadLink: "/downloads/auto-clipping.zip"
     }
 ];
