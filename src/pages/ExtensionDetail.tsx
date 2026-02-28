@@ -38,67 +38,43 @@ const ExtensionDetail: React.FC = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 style={{
-                    position: 'relative',
-                    background: 'linear-gradient(145deg, rgba(30,41,59,0.7) 0%, rgba(15,23,42,0.9) 100%)',
-                    borderRadius: '24px',
-                    padding: 'clamp(2rem, 5vw, 4rem)',
+                    background: '#1e293b',
+                    borderRadius: '8px',
+                    padding: '3rem 2rem',
                     marginBottom: '3rem',
-                    border: '1px solid rgba(255,255,255,0.05)',
-                    boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)',
+                    border: '1px solid #334155',
+                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1)',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    textAlign: 'center',
-                    overflow: 'hidden'
+                    textAlign: 'center'
                 }}
             >
-                {/* Brillo de fondo sutil */}
                 <div style={{
-                    position: 'absolute',
-                    top: '-50%',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    width: '600px',
-                    height: '600px',
-                    background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(0,0,0,0) 70%)',
-                    zIndex: 0,
-                    pointerEvents: 'none'
-                }}></div>
-
-                <div style={{
-                    background: 'rgba(255,255,255,0.03)',
+                    background: '#0f172a',
                     padding: '1.5rem',
-                    borderRadius: '20px',
+                    borderRadius: '8px',
                     marginBottom: '1.5rem',
-                    border: '1px solid rgba(255,255,255,0.08)',
-                    backdropFilter: 'blur(10px)',
-                    position: 'relative',
-                    zIndex: 1
+                    border: '1px solid #334155'
                 }}>
-                    <Icon name={extension.icon} size={56} style={{ color: '#818cf8' }} />
+                    <Icon name={extension.icon} size={48} style={{ color: '#60a5fa' }} />
                 </div>
 
                 <h1 style={{
-                    fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
-                    lineHeight: 1.1,
-                    color: '#ffffff',
+                    fontSize: 'clamp(2rem, 4vw, 3rem)',
+                    color: '#f8fafc',
                     marginBottom: '1rem',
-                    fontWeight: 900,
-                    letterSpacing: '-1px',
-                    position: 'relative',
-                    zIndex: 1
+                    fontWeight: 'bold'
                 }}>
                     {extension.title}
                 </h1>
 
                 <p style={{
-                    fontSize: 'clamp(1rem, 2vw, 1.25rem)',
-                    color: '#94a3b8',
+                    fontSize: '1.1rem',
+                    color: '#cbd5e1',
                     maxWidth: '800px',
                     lineHeight: 1.6,
-                    marginBottom: '2.5rem',
-                    position: 'relative',
-                    zIndex: 1
+                    marginBottom: '2rem'
                 }}>
                     {extension.fullDescription}
                 </p>
@@ -107,29 +83,27 @@ const ExtensionDetail: React.FC = () => {
                     href={extension.downloadLink || '#'}
                     target="_blank"
                     rel="noopener"
-                    whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(52,211,153,0.4)' }}
-                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     style={{
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        padding: '1rem 3rem',
+                        padding: '1rem 2rem',
                         fontSize: '1.1rem',
-                        letterSpacing: '1px',
                         textTransform: 'uppercase',
-                        fontWeight: 800,
-                        background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-                        borderRadius: '50px',
+                        fontWeight: 'bold',
+                        background: '#22c55e',
+                        borderRadius: '6px',
                         color: 'white',
                         textDecoration: 'none',
                         border: 'none',
-                        position: 'relative',
-                        zIndex: 1
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
                     }}
                 >
                     Probar Gratis (3 Días)
                 </motion.a>
-                <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: '#64748b', position: 'relative', zIndex: 1 }}>
+                <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#94a3b8' }}>
                     * Sin tarjeta de crédito. Instalación instantánea.
                 </div>
             </motion.div>
@@ -146,22 +120,21 @@ const ExtensionDetail: React.FC = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                     style={{
-                        background: 'rgba(30,41,59,0.4)',
-                        border: '1px solid rgba(255,255,255,0.05)',
-                        borderRadius: '20px',
+                        background: '#1e293b',
+                        border: '1px solid #334155',
+                        borderRadius: '8px',
                         padding: '2rem',
-                        backdropFilter: 'blur(10px)'
+                        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
                 >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
-                        <div style={{ width: '8px', height: '24px', background: '#3b82f6', borderRadius: '4px' }}></div>
-                        <h3 style={{ fontSize: '1.5rem', color: '#f8fafc', margin: 0 }}>Características Core</h3>
+                    <div style={{ marginBottom: '1.5rem', borderBottom: '2px solid #3b82f6', paddingBottom: '0.5rem' }}>
+                        <h3 style={{ fontSize: '1.3rem', color: '#f8fafc', margin: 0 }}>Características Core</h3>
                     </div>
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                         {extension.features.map((feature, i) => (
-                            <li key={i} style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start', background: 'rgba(0,0,0,0.2)', padding: '12px 16px', borderRadius: '12px' }}>
-                                <span style={{ color: '#3b82f6', marginRight: '12px', fontSize: '1.2rem', lineHeight: '1' }}>✦</span>
-                                <span style={{ fontSize: '1.05rem', color: '#cbd5e1', lineHeight: '1.4' }}>{feature}</span>
+                            <li key={i} style={{ marginBottom: '1rem', display: 'flex', alignItems: 'flex-start' }}>
+                                <span style={{ color: '#22c55e', marginRight: '10px', fontSize: '1.1rem', fontWeight: 'bold' }}>✓</span>
+                                <span style={{ fontSize: '1rem', color: '#e2e8f0', lineHeight: '1.5' }}>{feature}</span>
                             </li>
                         ))}
                     </ul>
@@ -172,31 +145,33 @@ const ExtensionDetail: React.FC = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                     style={{
-                        background: 'rgba(30,41,59,0.4)',
-                        border: '1px solid rgba(255,255,255,0.05)',
-                        borderRadius: '20px',
+                        background: '#1e293b',
+                        border: '1px solid #334155',
+                        borderRadius: '8px',
                         padding: '2rem',
-                        backdropFilter: 'blur(10px)'
+                        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
                 >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
-                        <div style={{ width: '8px', height: '24px', background: '#8b5cf6', borderRadius: '4px' }}></div>
-                        <h3 style={{ fontSize: '1.5rem', color: '#f8fafc', margin: 0 }}>Modulos Técnicos</h3>
+                    <div style={{ marginBottom: '1.5rem', borderBottom: '2px solid #6366f1', paddingBottom: '0.5rem' }}>
+                        <h3 style={{ fontSize: '1.3rem', color: '#f8fafc', margin: 0 }}>Módulos Técnicos</h3>
                     </div>
                     <div style={{ display: 'grid', gap: '0.75rem' }}>
                         {extension.technicalSpecs.map((spec, i) => (
                             <div key={i} style={{
-                                background: 'rgba(15,23,42,0.6)',
+                                background: '#0f172a',
                                 padding: '1rem',
-                                borderRadius: '12px',
-                                fontSize: '0.95rem',
-                                color: '#94a3b8',
-                                borderLeft: '3px solid #8b5cf6',
+                                borderRadius: '6px',
+                                fontSize: '0.9rem',
+                                color: '#cbd5e1',
+                                borderLeft: '4px solid #6366f1',
+                                borderTop: '1px solid #334155',
+                                borderRight: '1px solid #334155',
+                                borderBottom: '1px solid #334155',
                                 display: 'flex',
                                 alignItems: 'center',
-                                fontFamily: 'monospace'
+                                fontFamily: 'Arial, sans-serif'
                             }}>
-                                <span style={{ color: '#8b5cf6', marginRight: '8px' }}>&gt;_</span> {spec}
+                                {spec}
                             </div>
                         ))}
                     </div>
@@ -228,12 +203,12 @@ const ExtensionDetail: React.FC = () => {
                             const isPro = plan.name.toLowerCase().includes('pro');
                             return (
                                 <div key={i} style={{
-                                    background: isPro ? 'linear-gradient(180deg, rgba(30,41,59,0.8) 0%, rgba(15,23,42,0.9) 100%)' : 'rgba(30,41,59,0.4)',
-                                    padding: '2.5rem 2rem',
-                                    borderRadius: '24px',
-                                    border: isPro ? '2px solid rgba(139,92,246,0.5)' : '1px solid rgba(255,255,255,0.05)',
+                                    background: isPro ? '#0f172a' : '#1e293b',
+                                    padding: '2rem',
+                                    borderRadius: '8px',
+                                    border: isPro ? '2px solid #3b82f6' : '1px solid #334155',
                                     position: 'relative',
-                                    boxShadow: isPro ? '0 20px 40px -10px rgba(139,92,246,0.15)' : 'none',
+                                    boxShadow: isPro ? '0 8px 16px rgba(0,0,0,0.3)' : '0 4px 6px rgba(0,0,0,0.1)',
                                     display: 'flex',
                                     flexDirection: 'column'
                                 }}>
@@ -243,9 +218,9 @@ const ExtensionDetail: React.FC = () => {
                                             top: '-12px',
                                             left: '50%',
                                             transform: 'translateX(-50%)',
-                                            background: 'linear-gradient(90deg, #8b5cf6, #ec4899)',
+                                            background: '#3b82f6',
                                             padding: '4px 16px',
-                                            borderRadius: '20px',
+                                            borderRadius: '4px',
                                             fontSize: '0.8rem',
                                             fontWeight: 'bold',
                                             color: 'white',
@@ -254,18 +229,18 @@ const ExtensionDetail: React.FC = () => {
                                             MÁS POPULAR
                                         </div>
                                     )}
-                                    <h4 style={{ color: isPro ? '#c4b5fd' : '#94a3b8', marginBottom: '0.5rem', fontSize: '1.2rem' }}>{plan.name}</h4>
-                                    <div style={{ fontSize: '2.5rem', fontWeight: '900', marginBottom: '2rem', color: '#fff' }}>{plan.price}</div>
+                                    <h4 style={{ color: isPro ? '#60a5fa' : '#94a3b8', marginBottom: '0.5rem', fontSize: '1.2rem' }}>{plan.name}</h4>
+                                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '2rem', color: '#fff' }}>{plan.price}</div>
                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1 }}>
                                         {plan.features.map((feat, j) => (
                                             <li key={j} style={{
                                                 marginBottom: '12px',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                color: '#cbd5e1',
+                                                color: '#e2e8f0',
                                                 fontSize: '1rem'
                                             }}>
-                                                <span style={{ color: isPro ? '#8b5cf6' : '#64748b', marginRight: '10px' }}>✓</span>
+                                                <span style={{ color: isPro ? '#3b82f6' : '#94a3b8', marginRight: '10px', fontWeight: 'bold' }}>✓</span>
                                                 {feat}
                                             </li>
                                         ))}
