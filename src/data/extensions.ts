@@ -232,7 +232,7 @@ export const extensions: Extension[] = [
     {
         id: "Auto-clipping-yt",
         title: "AutoClipping YT",
-        youtubeUrl: "https://www.youtube.com/embed/GJnzzxr5Efc&t",
+        youtubeUrl: "https://www.youtube.com/embed/GJnzzxr5Efc",
         shortDescription: "Corta secciones de videos largos en YouTube con precisión quirúrgica y descárgalas al instante.",
         fullDescription: "La herramienta definitiva para creadores de contenido y editores. Inyecta una interfaz neuronal (HUD) flotante directamente en el reproductor de YouTube, permitiéndote marcar tiempos de inicio y fin con precisión de fotogramas. Exporta tus momentos exactos generando comandos batch on-the-fly para descargar solo el fragmento seleccionado en MP4 original sin necesidad de bajar todo el video.",
         features: [
