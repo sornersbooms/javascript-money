@@ -165,7 +165,7 @@ export const extensions: Extension[] = [
     {
         id: "prospect-ia",
         title: "Prospect IA",
-        youtubeUrl: "https://www.youtube.com/embed/EL_ID_DEL_VIDEO",
+        youtubeUrl: "https://www.youtube.com/embed/WhwZNBTVhIk",
         shortDescription: "Encuentra y contacta a tu cliente ideal automáticamente.",
         fullDescription: "La herramienta definitiva para prospección masiva. Deja que la IA identifique miembros cualificados en grupos y los contacte en piloto automático. Llena tu embudo de ventas con leads calientes listos para comprar, sin mover un dedo.",
         features: [
@@ -189,7 +189,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Prospectos/día", "Mensajes Estándar", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Prospectos Ilimitados", "Spintax Avanzado", "Soporte Estratégico"] }
         ],
-        downloadLink: "/downloads/prospect-ia.zip"
+        downloadLink: "https://drive.google.com/file/d/13q9Yx9eHKVJOJKgKXG4je83uhHiSub7f/view?usp=drive_link"
     },
     {
         id: "TexteaIA",
