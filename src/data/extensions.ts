@@ -230,32 +230,32 @@ export const extensions: Extension[] = [
         downloadLink: "https://drive.google.com/file/d/1bo09XRgipoyO-slK0Gc5GwSGT9CRI4Sx/view?usp=drive_link"
     },
     {
-        id: "Auto-clipping",
-        title: "Auto clipping Pro",
-        youtubeUrl: "https://www.youtube.com/embed/EL_ID_DEL_VIDEO",
-        shortDescription: "La herramienta definitiva para recortar y extraer video clips cortos a partir de videos largos.",
-        fullDescription: "¡Prepárate para la revolución del contenido viral! Auto Clipping Pro detecta y extrae automáticamente los momentos más épicos y virales de cualquier video largo (YouTube, Streams, etc.). Convierte horas de contenido en decenas de Shorts, TikToks y Reels listos para explotar en redes sociales, todo en cuestión de segundos.",
+        id: "Auto-clipping-yt",
+        title: "AutoClipping YT",
+        youtubeUrl: "https://www.youtube.com/embed/GJnzzxr5Efc&t",
+        shortDescription: "Corta secciones de videos largos en YouTube con precisión quirúrgica y descárgalas al instante.",
+        fullDescription: "La herramienta definitiva para creadores de contenido y editores. Inyecta una interfaz neuronal (HUD) flotante directamente en el reproductor de YouTube, permitiéndote marcar tiempos de inicio y fin con precisión de fotogramas. Exporta tus momentos exactos generando comandos batch on-the-fly para descargar solo el fragmento seleccionado en MP4 original sin necesidad de bajar todo el video.",
         features: [
-            "Detector de Viralidad por Risa (Escanea el chat en tiempo real buscando 'LOL', 'JAJA' para encontrar los mejores clips 📈)",
-            "Buffer de Retroceso Inteligente (Salva los últimos 60s de gloria aunque no estuvieras grabando ⏪)",
-            "Inyección de Upload en TikTok (Sube tus clips directamente sin llenar tu disco duro de archivos basura 📤)",
-            "Simulación de Drag & Drop (Comportamiento humano para evitar shadowbans en TikTok 🤖)",
-            "Modo 'Viral Watch' (Deja la herramienta corriendo y captura automáticamente cada pico de audiencia 🔥)",
-            "Edición Instantánea (Recorta y ajusta el momento exacto antes de subir ✂️)"
+            "Interfaz Neuronal (HUD) (Panel flotante interactivo y arrastrable sobre el video 🎯)",
+            "Marcadores de Alta Precisión (Atajos de teclado 'I' y 'F' para cortes milimétricos ⏱️)",
+            "Bypass de Descarga (Genera scripts .bat compatibles con yt-dlp instantáneamente �)",
+            "Memoria Activa (Guarda e indexa tus clips localmente sin perder progreso �)",
+            "Exportación Masiva por Lotes (Descarga decenas de fragmentos con un solo script �)",
+            "Protección de Autenticidad (Software protegido con validación por licenciamiento HWID 🔒)"
         ],
         technicalSpecs: [
-            "Motor: Análisis Heurístico de Chat (Densidad de Keywords/segundo)",
-            "Core: Grabación de Streams en Memoria (Blob Buffer Ring)",
-            "Automatización: Inyección de Eventos 'DataTransfer' (Fake Drag-and-Drop)",
-            "Seguridad: Navegación Simulada en TikTok Studio (DOM Manipulation)",
-            "Input: Generación Sintética de Eventos de Teclado para Captions",
-            "Almacenamiento: Chrome Local Storage optimizado para historial viral"
+            "UI Core: Inyección de React Portals con Framer Motion (Drag Controls)",
+            "State: Sincronización en tiempo real vía requestAnimationFrame API",
+            "Export: Generación de Blobs/Scripts nativos de Windows On-the-Fly",
+            "Security: Autenticación criptográfica por Huella de Hardware (HWID)",
+            "Download Engine: Integración transparente con CLI yt-dlp",
+            "Storage: Arquitectura basada en Chrome Local Storage con UUIDs"
         ],
         icon: "Scissors",
-        folderName: "ExtClipping",
+        folderName: "AutoClippingYT",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Clips/día", "Resolución 720p", "Marca de Agua"] },
-            { name: "Plan Pro", price: "$30 USD/mes", features: ["Clips Ilimitados", "4K Ready", "Auto-Subida TikTok"] }
+            { name: "Plan Basic", price: "$10 USD/mes", features: ["Clips Básicos", "Exportación Individual", "Soporte Estándar"] },
+            { name: "Plan Pro", price: "$30 USD/mes", features: ["Cortes Ilimitados", "Exportación Batch Masiva", "Uso sin restricciones"] }
         ],
         downloadLink: "/downloads/auto-clipping.zip"
     }
