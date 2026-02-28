@@ -107,7 +107,7 @@ export const extensions: Extension[] = [
     {
         id: "traffic-wa",
         title: "Traffic WA",
-        youtubeUrl: "https://www.youtube.com/embed/EL_ID_DEL_VIDEO",
+        youtubeUrl: "https://www.youtube.com/embed/CsyTDqoSXfw",
         shortDescription: "Extrae Numeros y Envia 20 o 30 mensajes Diarios en WhatsApp a Numeros Desconocidos",
         fullDescription: "Olvídate de guardar contactos uno por uno. Esta herramienta extrae automáticamente números de tus grupos de WhatsApp y envía, de forma segura, entre 20 y 30 mensajes diarios a clientes potenciales desconocidos. Es la forma más efectiva de prospectar en frío y llenar tu agenda de nuevos interesados todos los días, sin riesgo de bloqueos por exceso de actividad.",
         features: [
