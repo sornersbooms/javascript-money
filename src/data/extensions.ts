@@ -131,7 +131,7 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Contactos/día", "Envío Lento", "Sin Reportes"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Contactos Ilimitados", "Envío Optimizado", "Reportes de Entrega"] }
         ],
-        downloadLink: "/downloads/traffic-wa.zip"
+        downloadLink: "https://drive.google.com/file/d/1kCk5A16gUbiepHWAB3Y8JuKm0mgCA53t/view?usp=sharing"
     },
     {
         id: "seoTube",
