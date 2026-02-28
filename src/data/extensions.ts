@@ -186,8 +186,7 @@ export const extensions: Extension[] = [
         icon: "Users",
         folderName: "Prospect IA",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Prospectos/día", "Mensajes Estándar", "Soporte Básico"] },
-            { name: "Plan Pro", price: "$30 USD/mes", features: ["Prospectos Ilimitados", "Spintax Avanzado", "Soporte Estratégico"] }
+            { name: "Plan Pro", price: "$67 USD/mes", features: ["Prospectos Ilimitados", "Spintax Avanzado", "Soporte Estratégico"] }
         ],
         downloadLink: "https://drive.google.com/file/d/13q9Yx9eHKVJOJKgKXG4je83uhHiSub7f/view?usp=drive_link"
     },
