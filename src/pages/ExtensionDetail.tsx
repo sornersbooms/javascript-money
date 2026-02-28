@@ -107,7 +107,7 @@ const ExtensionDetail: React.FC = () => {
                                 color: 'white'
                             }}
                         >
-                            Instalar y Probar Gratis (30 Días)
+                            Instalar y Probar Gratis (3 Días)
                         </motion.a>
 
                         <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#9ca3af', marginBottom: '2rem' }}>
