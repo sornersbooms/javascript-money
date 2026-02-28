@@ -257,6 +257,6 @@ export const extensions: Extension[] = [
             { name: "Plan Basic", price: "$10 USD/mes", features: ["Clips Básicos", "Exportación Individual", "Soporte Estándar"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Cortes Ilimitados", "Exportación Batch Masiva", "Uso sin restricciones"] }
         ],
-        downloadLink: "/downloads/auto-clipping.zip"
+        downloadLink: "https://drive.google.com/file/d/1APM_myyx4nd4ampTZMPiAnfv54iD_HfP/view?usp=sharing"
     }
 ];
