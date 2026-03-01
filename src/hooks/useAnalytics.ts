@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { sendTelegramNotification, type AnalyticsEvent } from '../services/telegramService';
 
-export const useAnalytics = () => {
+export const usePageTracking = () => {
     const location = useLocation();
 
     // Track Page Views Automatically
@@ -48,6 +48,10 @@ export const useAnalytics = () => {
             window.removeEventListener('unhandledrejection', handleUnhandledRejection);
         };
     }, []);
+};
+
+export const useAnalytics = () => {
+    const location = useLocation();
 
     const trackEvent = (event: AnalyticsEvent['event'], details?: any) => {
         sendTelegramNotification({

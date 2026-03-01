@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ExtensionDetail from './pages/ExtensionDetail';
 import { SalesPopup } from './components/SalesPopup';
-import { useAnalytics } from './hooks/useAnalytics';
+import { usePageTracking } from './hooks/useAnalytics';
 
 function AnalyticsTracker() {
-  useAnalytics();
+  usePageTracking();
   return null;
 }
 

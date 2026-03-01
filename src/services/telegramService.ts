@@ -29,7 +29,18 @@ const getDeviceInfo = () => {
     return device;
 };
 
+// Cooldown para evitar mensajes duplicados (React StrictMode o renders múltiples)
+const recentlySent = new Set<string>();
+
 export const sendTelegramNotification = async (event: AnalyticsEvent) => {
+    // 0. Prevenir mensajes duplicados idénticos en menos de 2 segundos
+    const cacheKey = `${event.event}_${event.path}_${JSON.stringify(event.details || {})}`;
+    if (recentlySent.has(cacheKey)) {
+        return;
+    }
+    recentlySent.add(cacheKey);
+    setTimeout(() => recentlySent.delete(cacheKey), 2000);
+
     if (TELEGRAM_CONFIG.BOT_TOKEN === 'TU_BOT_TOKEN_AQUI' || TELEGRAM_CONFIG.CHAT_ID === 'TU_CHAT_ID_AQUI') {
         console.warn('Telegram no está configurado. Evento no enviado:', event);
         return;
@@ -49,7 +60,7 @@ export const sendTelegramNotification = async (event: AnalyticsEvent) => {
             header = 'NUEVA VISITA';
             break;
         case 'click':
-            emoji = '�';
+            emoji = '👆';
             header = 'INTERACCIÓN (CLIC)';
             break;
         case 'purchase_intent':
@@ -126,7 +137,7 @@ ${isImportant ? '━━━━━━━━━━━━━━━━━━━━\n_
     // ============================================
     // LÓGICA 2: Guardar en Sheet para el Resumen Diario
     // ============================================
-    if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'URL_DE_TU_GOOGLE_APPS_SCRIPT_AQUI') {
+    if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith('https://')) {
         try {
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
