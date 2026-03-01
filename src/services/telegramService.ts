@@ -39,36 +39,80 @@ export const sendTelegramNotification = async (event: AnalyticsEvent) => {
     const device = getDeviceInfo();
     const timestamp = new Date().toLocaleString('es-ES', { timeZone: 'America/New_York' });
 
+    let header = '';
     let emoji = 'ℹ️';
+    let isImportant = false;
+
     switch (event.event) {
-        case 'page_view': emoji = '👁️'; break;
-        case 'click': emoji = '🖱️'; break;
-        case 'purchase_intent': emoji = '💰'; break;
-        case 'install_intent': emoji = '🚀'; break;
-        case 'error': emoji = '❌'; break;
+        case 'page_view':
+            emoji = '👁️';
+            header = 'NUEVA VISITA';
+            break;
+        case 'click':
+            emoji = '�';
+            header = 'INTERACCIÓN (CLIC)';
+            break;
+        case 'purchase_intent':
+            emoji = '💰';
+            header = '✅ INTENCIÓN DE COMPRA';
+            isImportant = true;
+            break;
+        case 'install_intent':
+            emoji = '🚀';
+            header = '🔥 INTENCIÓN DE INSTALACIÓN';
+            isImportant = true;
+            break;
+        case 'error':
+            emoji = '❌';
+            header = '⚠️ ERROR DETECTADO';
+            isImportant = true;
+            break;
     }
 
-    const message = `
-${emoji} *Nuevo Evento Detectado*
-*Stand:* JavascriptMoneyStand
-*Evento:* \`${event.event}\`
-*Ruta:* ${event.path}
-*Visitante:* \`${visitorId}\`
-*Dispositivo:* ${device}
-*Fecha:* ${timestamp}
+    // Extraer información relevante si existe
+    const extensionName = event.details?.extension_title || 'N/A';
+    const actionName = event.details?.action || 'N/A';
 
-*Detalles:*
-${event.details ? '```json\n' + JSON.stringify(event.details, null, 2) + '\n```' : 'Ninguno'}
+    // Format details cleanly
+    let formattedDetails = '';
+    if (event.details) {
+        const safeDetails = { ...event.details };
+        delete safeDetails.extension_title; // Ya lo mostramos
+        delete safeDetails.action; // Ya lo mostramos
+
+        if (Object.keys(safeDetails).length > 0) {
+            formattedDetails = Object.entries(safeDetails)
+                .map(([key, value]) => `• *${key}:* \`${value}\``)
+                .join('\n');
+        }
+    }
+
+    // TODO: Reemplazar con la URL de tu Google Apps Script (Web App)
+    // Cuando lo publiques, debería empezar por 'https://script.google.com/macros/s/...'
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwk7jDCcpJzRvT1XDyw5_Mwee-l0MXwRpov4YSTMNy79N_yb5E6JnOagyin-sKxCMj-/exec';
+
+    // ============================================
+    // LÓGICA 1: Enviar mensaje directo a Telegram
+    // ============================================
+    const message = `
+${emoji} *${header}* ${emoji}
+━━━━━━━━━━━━━━━━━━━━
+${event.event === 'page_view' ? `📍 *Página:* \`${event.path}\`` : `📦 *Extensión:* *${extensionName}*`}
+${actionName !== 'N/A' ? `🎯 *Acción:* \`${actionName}\`\n` : ''}
+👤 *Visitante:* \`${visitorId}\`
+📱 *Dispositivo:* ${device}
+🕒 *Hora:* ${timestamp}
+${formattedDetails ? `\n📊 *Detalles Extra:*\n${formattedDetails}` : ''}
+${isImportant ? '━━━━━━━━━━━━━━━━━━━━\n_Atención requerida_ 👀' : ''}
   `.trim();
 
-    const url = `https://api.telegram.org/bot${TELEGRAM_CONFIG.BOT_TOKEN}/sendMessage`;
+    const telegramUrl = `https://api.telegram.org/bot${TELEGRAM_CONFIG.BOT_TOKEN}/sendMessage`;
 
     try {
-        await fetch(url, {
+        // Mandamos la alerta inmediata a Telegram
+        await fetch(telegramUrl, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 chat_id: TELEGRAM_CONFIG.CHAT_ID,
                 text: message,
@@ -77,5 +121,27 @@ ${event.details ? '```json\n' + JSON.stringify(event.details, null, 2) + '\n```'
         });
     } catch (error) {
         console.error('Error enviando notificación a Telegram:', error);
+    }
+
+    // ============================================
+    // LÓGICA 2: Guardar en Sheet para el Resumen Diario
+    // ============================================
+    if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'URL_DE_TU_GOOGLE_APPS_SCRIPT_AQUI') {
+        try {
+            await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                // Ojo: en Google Apps Script a veces usar 'text/plain' evita conflictos molestos de CORS preflight
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({
+                    event: event.event,
+                    path: event.path,
+                    visitorId: visitorId,
+                    device: device,
+                    details: event.details || {}
+                }),
+            });
+        } catch (error) {
+            console.error('Error guardando estadística en Google Sheet:', error);
+        }
     }
 };
