@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 interface ExtensionCardProps {
     extension: Extension;
@@ -11,6 +12,7 @@ interface ExtensionCardProps {
 
 export const ExtensionCard: React.FC<ExtensionCardProps> = ({ extension }) => {
     const [isHovered, setIsHovered] = useState(false);
+    const { trackEvent } = useAnalytics();
 
     // Get top 3 features for preview pills
     const topFeatures = extension.features.slice(0, 3);
@@ -25,7 +27,11 @@ export const ExtensionCard: React.FC<ExtensionCardProps> = ({ extension }) => {
             onHoverEnd={() => setIsHovered(false)}
             style={{ height: '100%' }} // Allow grid to control height
         >
-            <Link to={`/extension/${extension.id}`} style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
+            <Link
+                to={`/extension/${extension.id}`}
+                style={{ textDecoration: 'none', height: '100%', display: 'block' }}
+                onClick={() => trackEvent('click', { action: 'view_extension', extension_id: extension.id, extension_title: extension.title })}
+            >
                 <div className="glass-panel" style={{
                     padding: '1.5rem',
                     height: '100%',

@@ -3,10 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import { extensions } from '../data/extensions';
 import { Icon } from '../components/Icon';
 import { motion } from 'framer-motion';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const ExtensionDetail: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const extension = extensions.find(e => e.id === id);
+    const { trackEvent } = useAnalytics();
 
     if (!extension) {
         return <div style={{ padding: '4rem', color: 'white' }}>Extensión no encontrada.</div>;
@@ -85,6 +87,7 @@ const ExtensionDetail: React.FC = () => {
                     rel="noopener"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    onClick={() => trackEvent('install_intent', { action: 'click_probar_gratis', extension_id: extension.id, extension_title: extension.title })}
                     style={{
                         display: 'inline-flex',
                         alignItems: 'center',

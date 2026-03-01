@@ -3,10 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ExtensionDetail from './pages/ExtensionDetail';
 import { SalesPopup } from './components/SalesPopup';
+import { useAnalytics } from './hooks/useAnalytics';
+
+function AnalyticsTracker() {
+  useAnalytics();
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      <AnalyticsTracker />
       <div className="app-container">
         <Routes>
           <Route path="/" element={<Home />} />
