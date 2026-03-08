@@ -3,7 +3,7 @@ import { ExtensionCard } from '../components/ExtensionCard';
 import { extensions } from '../data/extensions';
 import { motion, AnimatePresence } from 'framer-motion';
 import FallingLuxury from '../components/FallingLuxury';
-import { Shield, Gem, DollarSign } from 'lucide-react';
+import { Shield, Gem, DollarSign, Play } from 'lucide-react';
 
 const Home: React.FC = () => {
     return (
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
                         fontSize: '1.25rem',
                         color: '#94a3b8',
                         maxWidth: '700px',
-                        margin: '0 auto 3rem',
+                        margin: '0 auto 2rem',
                         lineHeight: 1.6,
                         fontWeight: 300,
                         position: 'relative'
@@ -103,6 +103,46 @@ const Home: React.FC = () => {
                 >
                     <span style={{ color: '#22c55e', fontWeight: 600 }}>Herramientas para vender más y trabajar menos.</span> Automatiza la búsqueda de clientes y cierra ventas en piloto automático sin complicaciones técnicas.
                 </motion.p>
+
+                <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.8 }}
+                    style={{ marginBottom: '3rem' }}
+                >
+                    <button 
+                        onClick={() => {
+                            // Activamos el widget global buscando el botón real o usando un evento custom
+                            const widgetBtn = document.querySelector('.tutorial-widget-btn') as HTMLButtonElement;
+                            if (widgetBtn) widgetBtn.click();
+                        }}
+                        style={{
+                            background: 'rgba(255, 255, 255, 0.05)',
+                            border: '1px solid rgba(252, 211, 77, 0.3)',
+                            color: '#fcd34d',
+                            padding: '10px 20px',
+                            borderRadius: '30px',
+                            fontSize: '0.9rem',
+                            fontWeight: '600',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.background = 'rgba(252, 211, 77, 0.1)';
+                            e.currentTarget.style.borderColor = '#fcd34d';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                            e.currentTarget.style.borderColor = 'rgba(252, 211, 77, 0.3)';
+                        }}
+                    >
+                        <Play size={16} fill="#fcd34d" />
+                        ¿Cómo instalar las extensiones? (Video Tutorial)
+                    </button>
+                </motion.div>
 
                 <div style={{
                     height: '1px',

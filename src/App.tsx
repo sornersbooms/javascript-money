@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ExtensionDetail from './pages/ExtensionDetail';
 import { SalesPopup } from './components/SalesPopup';
+import TutorialWidget from './components/TutorialWidget';
 import { usePageTracking } from './hooks/useAnalytics';
 
 function AnalyticsTracker() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/extension/:id" element={<ExtensionDetail />} />
         </Routes>
         <SalesPopup />
+        <TutorialWidget />
       </div>
     </Router>
   );
