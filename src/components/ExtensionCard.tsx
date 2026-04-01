@@ -114,11 +114,17 @@ export const ExtensionCard: React.FC<ExtensionCardProps> = ({ extension }) => {
                             fontWeight: 600,
                             fontSize: '0.9rem'
                         }}>
-                            <span>Ver Detalles</span>
-                            <ChevronRight size={16} style={{
-                                transform: isHovered ? 'translateX(4px)' : 'translateX(0)',
-                                transition: 'transform 0.3s ease'
-                            }} />
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                <span style={{ color: '#22c55e', fontSize: '1rem' }}>{extension.plans?.[0]?.price || '$30 USD'}</span>
+                                <span style={{ fontSize: '0.7rem', color: 'var(--text-secondary)', fontWeight: 400 }}>/mes</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                <span>Ver detalles</span>
+                                <ChevronRight size={16} style={{
+                                    transform: isHovered ? 'translateX(4px)' : 'translateX(0)',
+                                    transition: 'transform 0.3s ease'
+                                }} />
+                            </div>
                         </div>
                     </div>
 
