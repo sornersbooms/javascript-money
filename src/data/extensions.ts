@@ -5,7 +5,7 @@ export interface Extension {
     fullDescription: string;
     features: string[];
     technicalSpecs: string[];
-    icon: string; // We will use a placeholder or Lucide icon name
+    icon: string;
     price?: string;
     folderName: string;
     screenshots?: string[];
@@ -23,25 +23,24 @@ export const extensions: Extension[] = [
         shortDescription: "Publica en miles de Grupos de Facebook en segundos. (Sin Baneo)",
         fullDescription: "Olvídate de la tarea tediosa de publicar manualmente en cientos de grupos. Con FB Auto GruPost, tu mensaje llega a miles de personas mientras duermes. Aumenta tu alcance orgánico exponencialmente sin esfuerzo y concéntrate en cerrar ventas mientras el software trabaja por ti.",
         features: [
-            "Publicación Automática Masiva (Llega a miles de personas mientras duermes 😴)",
-            "Redactor IA Contextual (Crea publicaciones irresistibles que venden solos 🤖)",
-            "Limpieza de Metadatos 'Modo Ninja' (Burla el algoritmo y evita el shadowban 🥷)",
-            "Soporte Spintax Avanzado (Variaciones infinitas para burlar el spam 🔄)",
-            "Programación de Campañas (Trabaja 1 hora, vende toda la semana 📅)",
-            "Simulación Humana Biométrica (Protege tu cuenta de bloqueos 🛡️)"
+            "Publicación Automática Masiva",
+            "Redactor IA Contextual",
+            "Limpieza de Metadatos 'Modo Ninja'",
+            "Soporte Spintax Avanzado",
+            "Programación de Campañas",
+            "Simulación Humana Biométrica"
         ],
         technicalSpecs: [
             "Algoritmo: Simulación Biométrica de Teclado (Human-Typing)",
             "Anti-Ban: Retardos Estocásticos y Jitter Aleatorio",
-            "Seguridad: Limpieza de Metadatos/Hash de Imágenes (Modo Ninja)",
+            "Seguridad: Limpieza de Metadatos/Hash de Imágenes",
             "Interacción: Eventos Nativos de Drag & Drop y Clics",
-            "Navegación: Detección Contextual de Campos (Multi-Selector)",
+            "Navegación: Detección Contextual de Campos",
             "Protección: Timeouts de Seguridad y Manejo de Errores"
         ],
         icon: "Megaphone",
         folderName: "ExtAutoPostGruposFB",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["1 Grupo a la vez", "Publicación Lenta", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Multi-Grupos Ilimitado", "Velocidad Turbo", "Soporte Prioritario VIP"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1KUbngvNinNCK0XMywgk-ojaQP2yC49UH/view?usp=drive_link"
@@ -50,27 +49,26 @@ export const extensions: Extension[] = [
         id: "respondssenger",
         title: "Respondssenger",
         youtubeUrl: "https://www.youtube.com/embed/1eqW3VMw1R0",
-        shortDescription: "Cierra ventas en segundos con respuestas rápidas optimizadas para el marketplace de facebook.",
-        fullDescription: "Domina el caos del Marketplace de Facebook y convierte chats en ventas instantáneas. RespondSSenger pone tus mejores scripts de cierre y respuestas frecuentes literalmente al alcance de un clic. Elimina la fricción, responde en milisegundos y profesionaliza tu atención al cliente para que nunca más pierdas una venta por tardar en contestar. Velocidad es dinero.",
+        shortDescription: "Cierra ventas en segundos con respuestas rápidas en Facebook Messenger.",
+        fullDescription: "Domina el caos del Marketplace de Facebook y convierte chats en ventas instantáneas. RespondSSenger pone tus mejores scripts de cierre y respuestas frecuentes literalmente al alcance de un clic. Elimina la fricción, responde en milisegundos y profesionaliza tu atención al cliente.",
         features: [
-            "Librería de Scripts de Cierre (Tus mejores argumentos a un clic 🖱️)",
-            "Detección de Contexto Inteligente (Sabe qué responder según la pregunta del cliente 🧠)",
-            "Envío Masivo de Reactivación (Recupera ventas perdidas en segundos ♻️)",
-            "Modo 'Focus' Minimalista (Interfaz limpia para máxima velocidad ⚡)",
-            "Anti-Ban Typing (Simulamos escritura humana real para proteger tu cuenta ️)",
-            "Categorización por Etiquetas (Organiza tus respuestas por producto o etapa de venta 🏷️)"
+            "Librería de Scripts de Cierre",
+            "Detección de Contexto Inteligente",
+            "Envío Masivo de Reactivación",
+            "Modo 'Focus' Minimalista",
+            "Anti-Ban Typing",
+            "Categorización por Etiquetas"
         ],
         technicalSpecs: [
-            "Core: Intervalos Aleatorios (Jitter) para naturalidad",
-            "Input: Simulación Nativa de Eventos de Teclado (Trusted Events)",
-            "UI: React Portal Overlay (No intrusivo)",
-            "Storage: Local Chrome Sync (Tus scripts te siguen)",
+            "Core: Intervalos Aleatorios (Jitter)",
+            "Input: Simulación Nativa de Eventos de Teclado",
+            "UI: React Portal Overlay",
+            "Storage: Local Chrome Sync",
             "Security: Sandbox Aislado del DOM Principal"
         ],
         icon: "MessageSquare",
         folderName: "ExtCloserMarketplace",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Scripts Guardados", "Respuestas Manuales", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Scripts Ilimitados", "Auto-Respuesta IA", "Soporte WhatsApp Directo"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1qBSBzBxgfrnDlbnxJ4VIQgk3OAys_JEG/view?usp=drive_link"
@@ -79,27 +77,26 @@ export const extensions: Extension[] = [
         id: "marketmoneypost",
         title: "MarketMoneyPost",
         youtubeUrl: "https://www.youtube.com/embed/L0bXkutLERg",
-        shortDescription: "Tu máquina de ventas 24/7 en Facebook Marketplace. Extrae productos de dropi a precio bajo y publicalos en facebook marketplace a un precio alto 😉",
-        fullDescription: "Convierte tu marketplace de Facebook en una mina de oro. Esta herramienta extrae automáticamente miles de productos ganadores de Dropi (a precio de proveedor) y los publica masivamente en tu Marketplace con el precio de venta que tú elijas. Olvídate de copiar y pegar manualmente; llena tu tienda en minutos, domina el mercado y genera ventas en piloto automático.",
+        shortDescription: "Tu máquina de ventas 24/7 en Facebook Marketplace.",
+        fullDescription: "Convierte tu marketplace de Facebook en una mina de oro. Esta herramienta extrae automáticamente miles de productos ganadores de Dropi (a precio de proveedor) y los publica masivamente en tu Marketplace con el precio de venta que tú elijas.",
         features: [
-            "Extracción Masiva de Dropi (Clona catálogos enteros en segundos ⚡)",
-            "Llenado 'Smart Fill' en Facebook (Publica sin escribir ni una letra 🤖)",
-            "Descarga de Imágenes 'Modo Fantasma' (Bypassea protecciones de descarga 👻)",
-            "Calculadora de Margen Automática (Ajusta tus precios al instante 💰)",
-            "Selectores de Respaldo Dinámicos (Si Facebook cambia, nosotros nos adaptamos )",
-            "Protección de Cuenta Anti-Spam (Comportamiento humano aleatorio ️)"
+            "Extracción Masiva de Dropi",
+            "Llenado 'Smart Fill' en Facebook",
+            "Descarga de Imágenes 'Modo Fantasma'",
+            "Calculadora de Margen Automática",
+            "Selectores de Respaldo Dinámicos",
+            "Protección de Cuenta Anti-Spam"
         ],
         technicalSpecs: [
-            "Scraping: Heurística de DOM Avanzada (Selectores resilientes)",
-            "Automation: Simulación de Eventos de Usuario (Trusted Types)",
-            "Network: Manejo de Blobs y Canvas para imágenes",
-            "Anti-Detection: Server-Side Selectors (Actualización remota)",
-            "Core: Comunicación Background-Content Script Segura"
+            "Scraping: Heurística de DOM Avanzada",
+            "Automation: Simulación de Eventos de Usuario",
+            "Network: Manejo de Blobs y Canvas",
+            "Anti-Detection: Server-Side Selectors",
+            "Core: Comunicación Background-Content Script"
         ],
         icon: "ShoppingBag",
         folderName: "ExtFBMarketplace",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["50 Productos/día", "Publicación Manual", "Soporte Básico"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Productos Ilimitados", "Publicación Automática", "Soporte VIP"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1blDx9K0R8Np9E7XSdgW8ZvZfjijUGr7j/view?usp=drive_link"
@@ -108,27 +105,26 @@ export const extensions: Extension[] = [
         id: "traffic-wa",
         title: "Traffic WA",
         youtubeUrl: "https://www.youtube.com/embed/CsyTDqoSXfw",
-        shortDescription: "Extrae Numeros y Envia 20 o 30 mensajes Diarios en WhatsApp a Numeros Desconocidos",
-        fullDescription: "Olvídate de guardar contactos uno por uno. Esta herramienta extrae automáticamente números de tus grupos de WhatsApp y envía, de forma segura, entre 20 y 30 mensajes diarios a clientes potenciales desconocidos. Es la forma más efectiva de prospectar en frío y llenar tu agenda de nuevos interesados todos los días, sin riesgo de bloqueos por exceso de actividad.",
+        shortDescription: "Extrae Numeros y Envia 20 o 30 mensajes Diarios en WhatsApp.",
+        fullDescription: "Olvídate de guardar contactos uno por uno. Esta herramienta extrae automáticamente números de tus grupos de WhatsApp y envía, de forma segura, entre 20 y 30 mensajes diarios a clientes potenciales desconocidos.",
         features: [
-            "Envío Masivo Nativo (Usa la API oculta de WhatsApp Web para máxima entrega )",
-            "Extractor de Miembros de Grupos (Obtén cientos de leads calificados en segundos )",
-            "CRM Contextual Inteligente (Detecta automáticamente el nombre del grupo 🧠)",
-            "Modo 'Native Flow' Anti-Bloqueo (Simula clicks y escritura real 🛡️)",
-            "Intervalos de Seguridad (Pausas aleatorias entre mensajes para evitar spam ⏱️)",
-            "Limpieza Automática (Filtra números inválidos o duplicados 🧹)"
+            "Envío Masivo Nativo",
+            "Extractor de Miembros de Grupos",
+            "CRM Contextual Inteligente",
+            "Modo 'Native Flow' Anti-Bloqueo",
+            "Intervalos de Seguridad",
+            "Limpieza Automática"
         ],
         technicalSpecs: [
-            "Core: Inyección en React Shadow DOM de WhatsApp",
-            "Input: Simulación Nativa 'insertText' (Indetectable)",
-            "Anti-Ban: Delays Configurables y Jitter Aleatorio",
-            "Data: Exportación a CSV/Excel Compatible",
+            "Core: Inyección en React Shadow DOM",
+            "Input: Simulación Nativa 'insertText'",
+            "Anti-Ban: Delays Configurables",
+            "Data: Exportación a CSV/Excel",
             "State: Persistencia de Sesión Segura"
         ],
         icon: "Megaphone",
         folderName: "ExtCloserWhatsapp",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Contactos/día", "Envío Lento", "Sin Reportes"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Contactos Ilimitados", "Envío Optimizado", "Reportes de Entrega"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1kCk5A16gUbiepHWAB3Y8JuKm0mgCA53t/view?usp=sharing"
@@ -138,26 +134,25 @@ export const extensions: Extension[] = [
         title: "SEO Tube",
         youtubeUrl: "https://www.youtube.com/embed/rY2rOte87Wo",
         shortDescription: "Posiciona tus videos #1 con el poder de la IA.",
-        fullDescription: "¿Te cuesta destacar en YouTube? Usa el poder de la Inteligencia Artificial para generar títulos, descripciones y etiquetas que el algoritmo AMA. Sube de ranking, gana más visitas y haz crecer tu canal sin necesidad de ser un experto en SEO.",
+        fullDescription: "¿Te cuesta destacar en YouTube? Usa el poder de la Inteligencia Artificial para generar títulos, descripciones y etiquetas que el algoritmo AMA. Sube de ranking, gana más visitas y haz crecer tu canal.",
         features: [
-            "Generador de Títulos Virales (IA entrenada con los mejores Youtubers )",
-            "Extractor de Tags de Competencia (Espía qué etiquetas usan los #1 🕵️)",
-            "Optimizador de Descripción Persuasiva (Textos que invitan al clic 🖱️)",
-            "Análisis de Tendencias en Tiempo Real (Súbete a la ola antes que nadie 🌊)",
-            "Integración Directa en YouTube Studio (Sin copiar y pegar 🔗)",
-            "Sistema 'Always-Alive' (Tu asistente SEO siempre activo en segundo plano )"
+            "Generador de Títulos Virales",
+            "Extractor de Tags de Competencia",
+            "Optimizador de Descripción Persuasiva",
+            "Análisis de Tendencias",
+            "Integración Directa en YouTube Studio",
+            "Sistema 'Always-Alive'"
         ],
         technicalSpecs: [
-            "AI Core: Prompt Engineering Dinámico (Context-Aware)",
-            "Connection: Bridge de Comunicación Cross-Tab (Seguro)",
-            "UI: Shadow DOM Aislado (No rompe estilos de YouTube)",
-            "Input: Simulación Nativa 'insertText' (Anti-Bot Detection)",
-            "Anti-Throttling: Oscilador de Audio 'Silent Scream' (Mantiene el SW vivo)"
+            "AI Core: Prompt Engineering Dinámico",
+            "Connection: Bridge Cross-Tab Seguro",
+            "UI: Shadow DOM Aislado",
+            "Input: Simulación 'insertText'",
+            "Anti-Throttling: Mantenimiento de Service Worker"
         ],
         icon: "LineChart",
         folderName: "ExtYoutubeSeoGPT",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["10 Videos/mes", "Análisis Básico", "Soporte Email"] },
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Videos Ilimitados", "Auditoría de Canal", "Soporte VIP"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1EVfQ0SBmG1Ic8Z3QnV_Zx0r9OZYeGu61/view?usp=drive_link"
@@ -167,36 +162,26 @@ export const extensions: Extension[] = [
         title: "Prospect IA",
         youtubeUrl: "https://www.youtube.com/embed/WhwZNBTVhIk",
         shortDescription: "Encuentra y contacta a tu cliente ideal automáticamente.",
-        fullDescription: "La herramienta definitiva para prospección masiva. Deja que la IA identifique miembros cualificados en grupos y los contacte en piloto automático. Llena tu embudo de ventas con leads calientes listos para comprar, sin mover un dedo.",
+        fullDescription: "La herramienta definitiva para prospección masiva. Deja que la IA identifique miembros cualificados en grupos y los contacte en piloto automático. Llena tu embudo de ventas con leads calientes listos para comprar.",
         features: [
-            "Motor de Extracción Heurística en Tiempo Real (Detecta prospectos al instante ⚡)",
-            "Filtrado Inteligente de 'Nuevos Miembros' (Encuentra leads frescos )",
-            "Tecnología 'Human-Type' Anti-Ban (Escribe como tú, no como un robot 🤖)",
-            "Sistema de Variación Spintax (Mensajes únicos para evitar filtros de spam 🔀)",
-            "Detección Preventiva de Restricciones (Para antes de que Facebook sospeche 🛡️)",
-            "Navegación Contextual Híbrida (Scroll y Click natural 🖱️)"
+            "Motor de Extracción Heurística",
+            "Filtrado Inteligente de 'Nuevos Miembros'",
+            "Tecnología 'Human-Type' Anti-Ban",
+            "Sistema de Variación Spintax",
+            "Detección Preventiva de Restricciones",
+            "Navegación Contextual Híbrida"
         ],
         technicalSpecs: [
-            "Engine: Observer de Mutaciones DOM con Debounce",
-            "Safety: Kill-Switch automático por detección de palabras clave",
-            "Input: Simulación de Eventos de Teclado (Keydown/Keyup/Input)",
-            "Scrolling: Algoritmo 'Smart Scroll' con inercia variable",
-            "Logic: Máquina de Estados Finita para flujo de prospección"
+            "Engine: Observer de Mutaciones DOM",
+            "Safety: Kill-Switch automático",
+            "Input: Simulación de Eventos de Teclado",
+            "Scrolling: Algoritmo 'Smart Scroll'",
+            "Logic: Máquina de Estados Finita"
         ],
         icon: "Users",
         folderName: "Prospect IA",
         plans: [
-            {
-                name: "Plan Pro VIP",
-                price: "$67 USD/mes",
-                features: [
-                    "Extracción de Miembros de Grupos Ilimitada",
-                    "Spintax Avanzado y Anti-Ban",
-                    "Soporte Estratégico",
-                    "Extracción Masiva de Comentaristas en Posts (NUEVO🚀)",
-                    "Extracción Masiva de Reacciones/Likes en Posts (NUEVO🔥)"
-                ]
-            }
+            { name: "Plan Pro VIP", price: "$67 USD/mes", features: ["Extracción Ilimitada", "Spintax Avanzado", "Soporte VIP", "Extracción de Comentaristas"] }
         ],
         downloadLink: "https://drive.google.com/file/d/13q9Yx9eHKVJOJKgKXG4je83uhHiSub7f/view?usp=drive_link"
     },
@@ -204,28 +189,27 @@ export const extensions: Extension[] = [
         id: "TexteaIA",
         title: "Textea IA",
         youtubeUrl: "https://www.youtube.com/embed/_EpcBdrFjeY",
-        shortDescription: "Un empleado virtual que vende o se deja entrenar por ti como tu quieras, trabaja en WhatsApp y Messenger.",
-        fullDescription: "Convierte tu WhatsApp y Messenger en máquinas de ventas 24/7. Textea IA no es solo un chatbot; es un empleado virtual que puedes entrenar a tu gusto con tus propios scripts y productos, o dejar que la IA venda por ti de forma autónoma. Responde al instante, califica prospectos y cierra ventas mientras tú descansas.",
+        shortDescription: "Un empleado virtual que vende o se deja entrenar por ti.",
+        fullDescription: "Convierte tu WhatsApp y Messenger en máquinas de ventas 24/7. Textea IA no es solo un chatbot; es un empleado virtual que puedes entrenar a tu gusto con tus propios scripts y productos.",
         features: [
-            "Cerebro Proactivo (Sabe cuándo hablar y cuándo usar el token `[SILENCE]` 🤫)",
-            "Acumulación de Mensajes 'Smart Wait' (Espera al cliente, no spamea ⏳)",
-            "Humanización de Burbujas (Divide textos largos en mensajes naturales 💬)",
-            "Comprensión de Audios (Whisper) (Escucha notas de voz y responde texto 👂)",
-            "Velocidad LPU Groq (Respuestas en milisegundos ⚡)",
-            "Simulación de Escritura Orgánica (Tiempos de espera variables ✍️)"
+            "Cerebro Proactivo Inteligente",
+            "Acumulación de Mensajes 'Smart Wait'",
+            "Humanización de Burbujas",
+            "Comprensión de Audios (Whisper)",
+            "Velocidad LPU Groq",
+            "Simulación de Escritura Orgánica"
         ],
         technicalSpecs: [
-            "AI Model: Compatible con Groq (LLaMA 3) y OpenAI",
-            "Logic: Buffer de Acumulación Temporal (State Machine)",
-            "Context: Inyección de Prompt del Sistema Dinámica",
-            "Audio: Pipeline de Transcripción Whisper API",
-            "Timing: Algoritmo de Retraso Variable (Longitud de texto * ms)"
+            "AI Model: Groq (LLaMA 3) y OpenAI",
+            "Logic: Buffer de Acumulación Temporal",
+            "Context: System Prompt Dinámico",
+            "Audio: Pipeline Whisper API",
+            "Timing: Retraso Variable Adaptativo"
         ],
         icon: "Bot",
         folderName: "Textea IA",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["100 Mensajes IA/día", "Solo Texto", "Soporte Email"] },
-            { name: "Plan Pro", price: "$30 USD/mes", features: ["IA Ilimitada", "Comprensión de Audios", "Entrenamiento Personalizado"] }
+            { name: "Plan Pro", price: "$30 USD/mes", features: ["IA Ilimitada", "Comprensión de Audios", "Entrenamiento VIP"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1bo09XRgipoyO-slK0Gc5GwSGT9CRI4Sx/view?usp=drive_link"
     },
@@ -233,29 +217,27 @@ export const extensions: Extension[] = [
         id: "Auto-clipping-yt",
         title: "AutoClipping YT",
         youtubeUrl: "https://www.youtube.com/embed/GJnzzxr5Efc",
-        shortDescription: "Corta secciones de videos largos en YouTube con precisión quirúrgica y descárgalas al instante.",
-        fullDescription: "La herramienta definitiva para creadores de contenido y editores. Inyecta una interfaz neuronal (HUD) flotante directamente en el reproductor de YouTube, permitiéndote marcar tiempos de inicio y fin con precisión de fotogramas. Exporta tus momentos exactos generando comandos batch on-the-fly para descargar solo el fragmento seleccionado en MP4 original sin necesidad de bajar todo el video.",
+        shortDescription: "Corta secciones de videos largos en YouTube y descárgalas.",
+        fullDescription: "La herramienta definitiva para creadores de contenido. Inyecta una interfaz neuronal (HUD) flotante directamente en el reproductor de YouTube, permitiéndote marcar tiempos de inicio y fin con precisión de fotogramas.",
         features: [
-            "Interfaz Neuronal (HUD) (Panel flotante interactivo y arrastrable sobre el video 🎯)",
-            "Marcadores de Alta Precisión (Atajos de teclado 'I' y 'F' para cortes milimétricos ⏱️)",
-            "Bypass de Descarga (Genera scripts .bat compatibles con yt-dlp instantáneamente �)",
-            "Memoria Activa (Guarda e indexa tus clips localmente sin perder progreso �)",
-            "Exportación Masiva por Lotes (Descarga decenas de fragmentos con un solo script �)",
-            "Protección de Autenticidad (Software protegido con validación por licenciamiento HWID 🔒)"
+            "Interfaz Neuronal (HUD) Flotante",
+            "Marcadores de Alta Precisión",
+            "Bypass de Descarga yt-dlp",
+            "Memoria Activa Local",
+            "Exportación Masiva Batch",
+            "Protección por Licencia HWID"
         ],
         technicalSpecs: [
-            "UI Core: Inyección de React Portals con Framer Motion (Drag Controls)",
-            "State: Sincronización en tiempo real vía requestAnimationFrame API",
-            "Export: Generación de Blobs/Scripts nativos de Windows On-the-Fly",
-            "Security: Autenticación criptográfica por Huella de Hardware (HWID)",
-            "Download Engine: Integración transparente con CLI yt-dlp",
-            "Storage: Arquitectura basada en Chrome Local Storage con UUIDs"
+            "UI Core: React Portals + Framer Motion",
+            "State: Sincronización requestAnimationFrame",
+            "Export: Scripts .bat On-the-Fly",
+            "Security: Validación HWID",
+            "Download Engine: Integración yt-dlp"
         ],
         icon: "Scissors",
         folderName: "AutoClippingYT",
         plans: [
-            { name: "Plan Basic", price: "$10 USD/mes", features: ["Clips Básicos", "Exportación Individual", "Soporte Estándar"] },
-            { name: "Plan Pro", price: "$30 USD/mes", features: ["Cortes Ilimitados", "Exportación Batch Masiva", "Uso sin restricciones"] }
+            { name: "Plan Pro", price: "$30 USD/mes", features: ["Cortes Ilimitados", "Exportación Batch Masiva", "Soporte VIP"] }
         ],
         downloadLink: "https://drive.google.com/file/d/1APM_myyx4nd4ampTZMPiAnfv54iD_HfP/view?usp=sharing"
     }
