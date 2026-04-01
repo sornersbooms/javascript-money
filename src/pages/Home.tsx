@@ -4,6 +4,7 @@ import { extensions } from '../data/extensions';
 import { motion, AnimatePresence } from 'framer-motion';
 import FallingLuxury from '../components/FallingLuxury';
 import { Shield, Gem, DollarSign, Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
     return (
@@ -183,7 +184,7 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.8 }}
                 style={{
                     maxWidth: '800px',
-                    margin: '8rem auto 4rem',
+                    margin: '8rem auto 0',
                     padding: '0 2rem',
                     textAlign: 'center',
                     position: 'relative',
@@ -230,6 +231,28 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </motion.div>
+
+            <footer style={{
+                marginTop: '4rem',
+                padding: '4rem 2rem',
+                borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+                background: 'rgba(15, 23, 42, 0.4)',
+                textAlign: 'center',
+                position: 'relative',
+                zIndex: 10
+            }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+                    <Link to="/terms" style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}>Términos y Condiciones</Link>
+                    <Link to="/privacy" style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}>Política de Privacidad</Link>
+                    <Link to="/refund" style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.3s' }}>Política de Reembolso</Link>
+                </div>
+                <p style={{ color: '#64748b', fontSize: '0.9rem' }}>
+                    © {new Date().getFullYear()} Javascript Money. Todos los derechos reservados.
+                </p>
+                <p style={{ color: '#475569', fontSize: '0.8rem', marginTop: '1rem' }}>
+                    Pagos procesados de forma segura por Paddle.com, nuestro Merchant of Record oficial.
+                </p>
+            </footer>
         </div>
     );
 };
