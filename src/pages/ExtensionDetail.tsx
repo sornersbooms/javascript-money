@@ -104,7 +104,7 @@ const ExtensionDetail: React.FC = () => {
                         boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
                     }}
                 >
-                    Probar Gratis (3 Días)
+                    Descargar E Instalar
                 </motion.a>
                 <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#94a3b8' }}>
                     * Sin tarjeta de crédito. Instalación instantánea.
