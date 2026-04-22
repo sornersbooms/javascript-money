@@ -43,7 +43,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Multi-Grupos Ilimitado", "Velocidad Turbo", "Soporte Prioritario VIP"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1KUbngvNinNCK0XMywgk-ojaQP2yC49UH/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "respondssenger",
@@ -71,7 +71,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Scripts Ilimitados", "Auto-Respuesta IA", "Soporte WhatsApp Directo"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1qBSBzBxgfrnDlbnxJ4VIQgk3OAys_JEG/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "marketmoneypost",
@@ -99,7 +99,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Productos Ilimitados", "Publicación Automática", "Soporte VIP"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1blDx9K0R8Np9E7XSdgW8ZvZfjijUGr7j/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "traffic-wa",
@@ -127,7 +127,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Contactos Ilimitados", "Envío Optimizado", "Reportes de Entrega"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1kCk5A16gUbiepHWAB3Y8JuKm0mgCA53t/view?usp=sharing"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "seoTube",
@@ -155,7 +155,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Videos Ilimitados", "Auditoría de Canal", "Soporte VIP"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1EVfQ0SBmG1Ic8Z3QnV_Zx0r9OZYeGu61/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "prospect-ia",
@@ -183,7 +183,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro VIP", price: "$67 USD/mes", features: ["Extracción Ilimitada", "Spintax Avanzado", "Soporte VIP", "Extracción de Comentaristas"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/13q9Yx9eHKVJOJKgKXG4je83uhHiSub7f/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "TexteaIA",
@@ -211,7 +211,7 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["IA Ilimitada", "Comprensión de Audios", "Entrenamiento VIP"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1bo09XRgipoyO-slK0Gc5GwSGT9CRI4Sx/view?usp=drive_link"
+        downloadLink: "https://wa.link/m3k9ml"
     },
     {
         id: "Auto-clipping-yt",
@@ -239,6 +239,6 @@ export const extensions: Extension[] = [
         plans: [
             { name: "Plan Pro", price: "$30 USD/mes", features: ["Cortes Ilimitados", "Exportación Batch Masiva", "Soporte VIP"] }
         ],
-        downloadLink: "https://drive.google.com/file/d/1APM_myyx4nd4ampTZMPiAnfv54iD_HfP/view?usp=sharing"
+        downloadLink: "https://wa.link/m3k9ml"
     }
 ];
